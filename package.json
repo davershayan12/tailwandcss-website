@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/stylesheet.css --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davershayan12/tailwandcss-website.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/davershayan12/tailwandcss-website#readme",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
   }
 }
