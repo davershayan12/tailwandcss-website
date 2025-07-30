@@ -1,63 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Plantopia - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000000;
-            color: #e5e7eb;
-        }
-        .text-chartreuse {
-            color: #7FFF00;
-        }
-        .bg-chartreuse {
-            background-color: #7FFF00;
-        }
-        .bg-dark-green-shade {
-            background-color: #0A1F0A;
-        }
-        .input-focus-chartreuse:focus {
-            outline: none;
-        }
-    </style>
-</head>
-<body class="text-gray-200 min-h-screen flex flex-col">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-dark-green-shade">
-        <a href="index.html" class="text-2xl font-bold text-white">Plantopia</a>
-        <div class="hidden md:flex space-x-6">
-            <a href="index.html" class="text-white">Home</a>
-            <a href="team.html" class="text-white">Team</a>
-            <a href="register.html" class="text-white">Register</a>
-            <a href="login.html" class="text-white">Login</a>
-        </div>
-    </nav>
 
-    <header class="py-16 md:py-24 text-center bg-black flex-grow flex items-center justify-center">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-white">
-                Welcome Back to Plantopia <span class="text-chartreuse"></span>
-            </h1>
-            <p class="text-lg md:text-xl mb-8">
-                Your journey to green living continues here.
-            </p>
-        </div>
-    </header>
-    <section class="py-16 md:py-20 bg-dark-green-shade">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white">About Us</h2>
-            <p class="text-lg leading-relaxed max-w-3xl mx-auto text-gray-300">
-                At Plantopia, we believe in the power of plants to transform spaces and lives.
-                Our mission is to connect people with beautiful, healthy plants, making it easy
-                to bring nature's tranquility and beauty into your home or office. We are committed
-                to sustainable practices, exceptional quality, and providing expert guidance
-                to help your green companions thrive. Join our community of plant lovers and
-                discover the joy of nurturing life.
-            </p>
-        </div>
-    </section>
-    <footer class="bg-gray-950 text-white py-8 text-center">
-        <p>&copy; 2023 Plantopia. All rights
+</head>
+<body class="bg-white">
+    <div class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('/background.jpg');">
+        <header class="bg-green-400 p-4 shadow-md">
+            <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <div class="text-white text-3xl font-[sinosans] mb-4 md:mb-0">
+                    Plantopia <img class="inline-block h-8" src="/pngLogo.png" alt="logo">
+                </div>
+                <div class="flex flex-wrap justify-center space-x-2 md:space-x-4">
+                    <a href="index.html" class="bg-green-400 text-white py-2 px-4 rounded-md font-[queensides] text-xl hover:bg-white hover:text-green-400">Home</a>
+                    <a href="shop.html" class="bg-green-400 text-white py-2 px-4 rounded-md font-[queensides] text-xl hover:bg-white hover:text-green-400">Shop</a>
+                    <a href="sponsors.html" class="bg-green-400 text-white py-2 px-4 rounded-md font-[queensides] text-xl hover:bg-white hover:text-green-400">Sponsors</a>
+                    <a href="team.html" class="bg-green-400 text-white py-2 px-4 rounded-md font-[queensides] text-xl hover:bg-white hover:text-green-400">Team</a>
+                </div>
+            </nav>
+        </header>
+        <main class="container mx-auto p-6 md:p-10 lg:p-12 text-center">
+            <section class="bg-white bg-opacity-90 rounded-lg p-8 shadow-lg max-w-4xl mx-auto mb-12">
+                <h1 class="text-green-400 text-5xl font-[shanolia] mb-6">Welcome to Plantopia!</h1>
+                <p class="text-gray-800 text-lg font-[queensides] leading-relaxed">
+                    Discover the beauty and tranquility of nature with Plantopia. We are passionate about bringing the joy of plants into your home and garden. Explore our collection of vibrant greens, exotic blooms, and essential plant care guides. Let's grow together!
+                </p>
+            </section>
+            <section class="bg-white bg-opacity-90 rounded-lg p-8 shadow-lg max-w-6xl mx-auto">
+                <h2 class="text-green-400 text-4xl font-[shanolia] mb-8">Our Green Collection</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="/Lush Monstera.jpg" alt="Monstera plant with large fenestrated leaves" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-xl font-[shanolia]">Lush Monstera</h3>
+                            <p class="text-gray-600 font-[queensides] text-sm mt-2">A popular indoor plant known for its unique leaf shape.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="/Vibrant Succulents.jpg" alt="Assortment of colorful succulent plants" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-xl font-[shanolia]">Vibrant Succulents</h3>
+                            <p class="text-gray-600 font-[queensides] text-sm mt-2">Low-maintenance and beautiful, perfect for any space.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="/Elegant Fern.jpg" alt="Delicate fern plant with feathery fronds" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-xl font-[shanolia]">Elegant Fern</h3>
+                            <p class="text-gray-600 font-[queensides] text-sm mt-2">Adds a touch of natural elegance to any room.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="/Desert Cacti.jpg" alt="Collection of various cactus plants" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-xl font-[shanolia]">Desert Cacti</h3>
+                            <p class="text-gray-600 font-[queensides] text-sm mt-2">Resilient and striking, a unique addition to your collection.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="/Exotic Orchid.jpg" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-xl font-[shanolia]">Exotic Orchid</h3>
+                            <p class="text-gray-600 font-[queensides] text-sm mt-2">A symbol of luxury and beauty, perfect for gifting.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="/Trailing Pothos.jpg" alt="Trailing pothos plant with variegated leaves" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-xl font-[shanolia]">Trailing Pothos</h3>
+                            <p class="text-gray-600 font-[queensides] text-sm mt-2">Easy to care for and great for beginners.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="bg-green-400 p-6 text-white text-center font-[queensides] mt-12">
+            <p>&copy; 2024 Plantopia. All rights reserved.</p>
+        </footer>
+    </div>
