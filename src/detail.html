@@ -13,6 +13,8 @@
                 extend: {
                     colors: {
                         heading: '#A9E581',
+                        form1: '#55971E',
+                        form2: '#1D6E00',
                     }
                 }
             }
@@ -25,27 +27,35 @@
         <header class="flex justify-around h-22 w-full  py-5 px-4 font-[queensides] ">
             <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
                 <a class="text-white hover:text-green-500 transfrom duration-300" href="index.html">Home</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="team.html">Shop</a>
+                <a class=" text-white hover:text-green-500 transfrom duration-300" href="shop.html">Shop</a>
             </nav>
             <img class="inline-block h-16 justify-center" src="../others/logo0.png" alt="">
             <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="">Details</a>
+                <a class=" text-white hover:text-green-500 transfrom duration-300" href="detail.html">Details</a>
                 <a class=" text-white hover:text-green-500 transfrom duration-300" href="">Team</a>
             </nav>            
         </header>
     </div>
-    <div>
-        <p class="text-6xl text-heading font-[sinosans] text-center">Put your details for placing orders</p>
-        <div class="bg-gradient-to-bl  from-green-200 to-green-100 rounded-2xl h-96 my-12 mx-64 ">
+    <div class="flex justify-evenly py-12">
+        <div>
+            <p class="text-6xl text-heading font-[sinosans] text-center">Put your details for <br> placing orders</p>
+            <p class="text-2xl text-white font-[sinosans] ">Put your details for <br> placing orders</p>
+        </div>
+        <div class="bg-gradient-to-bl  from-form1  to-form2 rounded-3xl h-96 w-1/2 my-16 py-8 px-12    ">
            
             <form class="space-y-4">
-                <div class="mx-56 ">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <div class="">
+                    <label for="name" class="block text-xl  font-[queensides] text-white">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 bg-white block w-full px-3 py-2  rounded-md  shadow-sm focus:outline-none focus:outline-green-600  font-[queensides] font-medium ">
                 </div>
                 <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <label for="email" class="text-xl  font-[queensides] text-white">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 bg-white block w-full px-3 py-2  rounded-md shadow-sm focus:outline-none focus:outline-green-600  font-medium font-[queensides]">
+                </div>
+                <div>
+                    <label for="address" class="text-white text-xl font-[queensides]">Address</label>
+                    <input type="address" name="address" id="address" class="mt-1 block px-3 py-2 bg-white w-full rounded-md focus:outline-none focus:outline-green-600 font-[queensides] font-medium" >
+
                 </div>
                 <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
             </form>
