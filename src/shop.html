@@ -20,23 +20,43 @@
         }
 
     </script>
+
 <body class="bg-[url(/others/bgpng0.png)] bg-no-repeat bg-cover h-screen bg-center bg-fixed">
- <div class="flex justify-between ">
-        <header class="flex justify-around h-22 w-full  py-5 px-4 font-[queensides] ">
-            <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class="text-white hover:text-green-500 transfrom duration-300" href="index.html">Home</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="shop.html">Shop</a>
-            </nav>
-            <img class="inline-block h-16 justify-center" src="../others/logo0.png" alt="">
-            <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="detail.html">Details</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="">Team</a>
-            </nav>            
-        </header>
+<div class="px-20 flex justify-between">
+  <header class="flex justify-between items-center h-22 w-full py-5 px-4 font-[queensides] relative">
+    <nav class="hidden md:flex text-3xl gap-x-28">
+      <a class="text-white hover:text-green-500 transform duration-300" href="index.html">Home</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="shop.html">Shop</a>
+    </nav>
+
+    <img class="inline-block h-16 mx-4  " src="../others/logo0.png" alt="Logo">
+
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+    <label for="menu-toggle" class="md:hidden cursor-pointer text-white">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+
+    <nav class="hidden md:flex text-3xl gap-x-28">
+      <a class="text-white hover:text-green-500 transform duration-300" href="detail.html">Details</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="team.html">Team</a>
+    </nav>
+
+    <div    class="hidden flex-col items-center w-full absolute top-full left-0 rounded-3xl  bg-gradient-to-bl from-green-800 to-green-950    bg-opacity-95 py-4 space-y-4 text-3xl z-50 peer-checked:flex md:hidden">
+      <a class="text-white hover:text-green-500 transform duration-300" href="index.html">Home</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="shop.html">Shop</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="detail.html">Details</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="team.html">Team</a>
     </div>
+  </header>
+</div>
     <p class="h-30 text-heading text-center font-[sinosans] text-6xl mt-7 mb-6 mx-28 ">Plants on sales</p>    
     <div class=" shadow-2xl shadow-green-700    bg-[url(/others/footer0.png)] bg-no-repeat bg-cover h-fit   m-7  w-3xl  rounded-3xl  ">
-        <div class="grid grid-cols-4 justify-evenly  px-3 pl-11 py-4   ">
+        <div class="grid 2xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-2 justify-self-center 2xl:gap-x-10 lg:gap-x-24 md:gap-x-7 sm:gap-x-3 px-4    sm:grid-cols-1 2xl:px-3   py-4   ">
             <div class=" relative h-96 w-80 my-6 bg-gradient-to-br from-green-700 to-green-900 rounded-3xl  ">
                 <div class="absolute inset-0 z-10">
                     <p class="shadow-2xl shadow-black bg-[url(/plant/AloeVera.webp)] h-full w-full bg-cover bg-center rounded-3xl"></p>

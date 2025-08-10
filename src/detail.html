@@ -23,25 +23,44 @@
     </script>
 <body class="bg-[url(/others/bgpng0.png)] bg-no-repeat bg-cover h-screen bg-center bg-fixed">
     
-<div class="flex justify-between ">
-        <header class="flex justify-around h-22 w-full  py-5 px-4 font-[queensides] ">
-            <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class="text-white hover:text-green-500 transfrom duration-300" href="index.html">Home</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="shop.html">Shop</a>
-            </nav>
-            <img class="inline-block h-16 justify-center" src="../others/logo0.png" alt="">
-            <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="detail.html">Details</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="">Team</a>
-            </nav>            
-        </header>
+<div class="px-20 flex justify-between">
+  <header class="flex justify-between items-center h-22 w-full py-5 px-4 font-[queensides] relative">
+    <nav class="hidden md:flex text-3xl gap-x-28">
+      <a class="text-white hover:text-green-500 transform duration-300" href="index.html">Home</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="shop.html">Shop</a>
+    </nav>
+
+    <img class="inline-block h-16 mx-4  " src="../others/logo0.png" alt="Logo">
+
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+    <label for="menu-toggle" class="md:hidden cursor-pointer text-white">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+
+    <nav class="hidden md:flex text-3xl gap-x-28">
+      <a class="text-white hover:text-green-500 transform duration-300" href="detail.html">Details</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="team.html">Team</a>
+    </nav>
+
+    <div    class="hidden flex-col items-center w-full absolute top-full left-0 rounded-3xl  bg-gradient-to-bl from-green-800 to-green-950    bg-opacity-95 py-4 space-y-4 text-3xl z-50 peer-checked:flex md:hidden">
+      <a class="text-white hover:text-green-500 transform duration-300" href="index.html">Home</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="shop.html">Shop</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="detail.html">Details</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="team.html">Team</a>
     </div>
-    <div class="flex justify-evenly py-12 mx-9">
-        <div class="w-1/2 mx-5">
+  </header>
+</div>
+    <div class="flex 2xl:flex-row md:flex-col max-md:flex-col  justify-evenly py-12 mx-9">
+        <div class="2xl:w-1/2 md:w-full 2xl:text-start md:text-center sm:text-center max-sm:text-center mx-5">
             <p class="text-6xl text-heading font-[sinosans] mb-6 ">Put your details for <br> placing orders</p>
-            <p class="text-2xl text-white font-[queensides] ">Placing an order with Plantopia is designed to be a seamless and enjoyable experience. Our entire catalog is available through our user-friendly website, where you can browse our extensive selection of plants, tools, and accessories. Once you’ve made your selections, simply add them to your cart and proceed to our secure checkout page. We offer a variety of payment options, including major credit cards and digital wallets, to ensure a smooth transaction. You'll receive a confirmation email with all the details of your purchase, and you can track your order's journey from our greenhouse to your doorstep using the provided tracking number. Our dedicated customer support team is always on hand to assist with any questions you may have before, during, or after your purchase.</p>
+            <p class="text-2xl text-white font-[queensides] ">Placing an order with Plantopia is designed to be a seamless and enjoyable experience. Our entire catalog is available through our user-friendly website, where you can browse our extensive selection of plants, tools, and accessories.</p>
         </div>
-        <div class="bg-[url(/others/details.jpg)] bg-cover  rounded-3xl h-96 w-1/2 mt-36 py-8 px-12    ">
+        <div class="bg-[url(/others/details.jpg)] bg-cover  rounded-3xl h-96 2xl:w-1/2 md:w-full 2xl:mt-28 max-md:my-8 sm:my-6 py-8 px-12    ">
            
             <form class="space-y-4">
                 <div class="">
@@ -57,7 +76,7 @@
                     <input type="address" name="address" id="address" class="mt-1 block px-3 py-2 bg-white w-full rounded-md focus:outline-none focus:outline-green-600 font-[queensides] font-medium" >
 
                 </div>
-                <button type="submit" class="w-1/2 flex justify-center py-2 px-4 mx-36 border border-transparent rounded-md shadow-sm text-xl font-[queensides] font-medium text-white bg-green-700  hover:bg-white hover:text-green-700  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-300">Submit</button>
+                <button type="submit" class="w-full flex justify-center item-center  py-2 px-4  border border-transparent rounded-md shadow-sm text-xl font-[queensides] font-medium text-white bg-green-700  hover:bg-white hover:text-green-700  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-300">Submit</button>
             </form>
         </div>
 

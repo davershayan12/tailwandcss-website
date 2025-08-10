@@ -20,37 +20,57 @@
         }
 
     </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <body class="bg-[url(/others/bgpng0.png)] bg-no-repeat bg-cover h-screen bg-center bg-fixed">
-    
-<div class="flex justify-between ">
-        <header class="flex justify-around h-22 w-full  py-5 px-4 font-[queensides] ">
-            <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class="text-white hover:text-green-500 transfrom duration-300" href="index.html">Home</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="shop.html">Shop</a>
-            </nav>
-            <img class="inline-block h-16 justify-center" src="../others/logo0.png" alt="">
-            <nav class="flex justify-start text-3xl py-5.5 gap-x-28">
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="detail.html">Details</a>
-                <a class=" text-white hover:text-green-500 transfrom duration-300" href="">Team</a>
-            </nav>            
-        </header>
+<div class="px-20 flex justify-between">
+  <header class="flex justify-between items-center h-22 w-full py-5 px-4 font-[queensides] relative">
+    <nav class="hidden md:flex text-3xl gap-x-28">
+      <a class="text-white hover:text-green-500 transform duration-300" href="index.html">Home</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="shop.html">Shop</a>
+    </nav>
+
+    <img class="inline-block h-16 mx-4  " src="../others/logo0.png" alt="Logo">
+
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+    <label for="menu-toggle" class="md:hidden cursor-pointer text-white">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+
+    <nav class="hidden md:flex text-3xl gap-x-28">
+      <a class="text-white hover:text-green-500 transform duration-300" href="detail.html">Details</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="team.html">Team</a>
+    </nav>
+
+    <div    class="hidden flex-col items-center w-full absolute top-full left-0 rounded-3xl  bg-gradient-to-bl from-green-800 to-green-950    bg-opacity-95 py-4 space-y-4 text-3xl z-50 peer-checked:flex md:hidden">
+      <a class="text-white hover:text-green-500 transform duration-300" href="index.html">Home</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="shop.html">Shop</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="detail.html">Details</a>
+      <a class="text-white hover:text-green-500 transform duration-300" href="team.html">Team</a>
     </div>
+  </header>
+</div>
     </div>
-    <main class=" h-30 text-heading text-6xl mt-7 mb-6 2xl:mx-28 md:mx-12 font-[sinosans] ">
+    <main class=" h-30 text-heading text-6xl mt-7 mb-6 2xl:mx-28 md:mx-12 sm:mx-8 max-sm:mx-4 font-[sinosans] ">
         <p class=" text-center rounded-3xl  bg-[url(/plant/first.jpg)] bg-cover">Welcome to Plantpioa</p>
     </main>
-    <div class="flex 2xl:flex-row md:flex-col">
-        <div class="text-2xl text-white 2xl:w-3/5  2xl:ml-28 xl:mr-11 md:mx-12  my-6 font-[queensides]">
+    <div class="flex 2xl:flex-row md:flex-col sm:flex-col max-sm:flex-col ">
+        <div class="text-2xl text-white 2xl:w-3/5  2xl:ml-28 xl:mr-11 md:mx-12 sm:mx-8  md:my-6 max-sm:mx-6  font-[queensides]">
             <p>Plantopia, a company whose name itself suggests a paradise of plant life, has quickly established itself as a leader in the horticultural industry. With a focus on sustainable practices and innovative product design, Plantopia offers a diverse range of high-quality plants, gardening tools, and eco-friendly planters. Their commitment to making gardening accessible to everyone, from seasoned enthusiasts to complete beginners, is evident in their user-friendly guides and expertly curated plant collections. By fostering a community of plant lovers and promoting the therapeutic benefits of tending to green spaces, Plantopia is not just selling products; they are cultivating a passion for nature and helping to create greener, more beautiful environments, one plant at a time.</p>
         </div>
-        <div class="flex md:justify-center text-center text-5xl font-[queensides] opacity-50  text-white hover:text-green-800 hover:opacity-100  transition duration-300  ">
-            <a class=" flex justify-center h-72  2xl:w-11/12   md:w-11/12 mt-10 2xl:px-52  opacity-70 rounded-3xl shadow-2xl shadow-black  items-center bg-cover bg-center  bg-[url(/others/main1.jpg)]  text-white hover:text-green-800 hover:opacity-100 hover:shadow-green-900  transition duration-300" href="">shop now</a>
+        <div class="flex md:justify-center text-center text-5xl font-[queensides] opacity-70  text-white hover:text-green-800 hover:opacity-100  transition duration-300  ">
+            <a class=" flex justify-center md:h-72 2xl:h-11/12  2xl:w-11/12 sm:h-72 max-sm:h-60 max-sm:mx-6 sm:mx-8 sm:w-11/12 md:w-11/12 max-sm:w-11/12 mt-10 2xl:px-52  opacity-70 rounded-3xl shadow-2xl shadow-black  items-center bg-cover bg-center  bg-[url(/others/main1.jpg)]  text-white hover:text-green-800 hover:opacity-100 hover:shadow-green-900  transition duration-300" href="">shop now</a>
         </div> 
 
 
     </div >
-        <div class="2xl:mx-28 md:mx-12 my-2  ">
-            <h1 class="text-5xl text-heading my-6 font-[sinosans] ">A Nurturing Community</h1>
+        <div class="2xl:mx-28 md:mx-12 sm:mx-8 max-sm:mx-6 my-5  ">
+            <h1 class="text-5xl md:text-center sm:text-center max-sm:text-center text-heading my-6 font-[sinosans] ">A Nurturing Community</h1>
             <p class="text-2xl font-[queensides] text-white ">Beyond their impressive product line, Plantopia has successfully cultivated a thriving community around the joy of plant care. Through their active social media channels, comprehensive blog, and interactive workshops, they provide a platform for plant enthusiasts to connect, share tips, and celebrate their botanical successes. This community-first approach has transformed the brand from a simple retailer into a trusted resource and a source of inspiration. By offering expert advice on everything from troubleshooting common plant problems to designing stunning indoor gardens, Plantopia empowers its customers to not only buy plants but to truly understand and cherish them.</p>
         </div>    
     <div class="w-full h-32 bg-gradient-to-tl from-green-900  text-white py-3  rounded-t-3xl shadow-2xl  shadow-black">
